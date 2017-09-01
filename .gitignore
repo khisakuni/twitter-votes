@@ -1,0 +1,6 @@
+nsqd.*
+votes.*
+data/
+test.*
+twittervotes/twittervotes
+twittervotes/.env
