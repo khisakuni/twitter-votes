@@ -54,11 +54,12 @@ func setupTwitterAuth() {
 	}
 
 	var ts struct {
-		ConsumerKey    string `env:"SP_TWITTER_KEY, required"`
-		ConsumerSecret string `env:"SP_TWITTER_SECRET, required"`
-		AccessToken    string `env:"SP_TWITTER_ACCESS_TOKEN, required"`
-		AccessSecret   string `env:"SP_TWITTER_ACCESS_SECRET, required"`
+		ConsumerKey    string `env:"SP_TWITTER_KEY,required"`
+		ConsumerSecret string `env:"SP_TWITTER_SECRET,required"`
+		AccessToken    string `env:"SP_TWITTER_ACCESS_TOKEN,required"`
+		AccessSecret   string `env:"SP_TWITTER_ACCESS_SECRET,required"`
 	}
+
 	if err := envdecode.Decode(&ts); err != nil {
 		log.Fatalln(err)
 	}
